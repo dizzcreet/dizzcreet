@@ -1,0 +1,6 @@
+bill=float(input("Enter the bill amount: "))
+tip=int(input("what percentage do you want to tip?:"))
+people=int(input("How many people are there?"))
+tipfinal= bill+tip/100*bill
+money= tipfinal/people
+print("Each one of you has to spend: ", money)
