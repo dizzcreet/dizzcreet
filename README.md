@@ -38,45 +38,6 @@
 
 ###
 
-<div align="center">
-  <img height="200" src="https://media1.tenor.com/m/A5RWQDxbE-cAAAAd/kenma.gif"  />
-</div>
-
-###
-
-<div align="center">
-  <img src="https://profile-counter.glitch.me/dizzcreet/count.svg?"  />
-</div>
-<div align="center">
-  <canvas id="pacmanCanvas" width="600" height="100"></canvas>
-</div>
-
-<script>
-  const contributions = [0, 0, 0, 0, 5, 2]; // Replace with real data
-  const canvas = document.getElementById('pacmanCanvas');
-  const ctx = canvas.getContext('2d');
-
-  function draw() {
-    // Draw dots
-    contributions.forEach((count, i) => {
-      for (let j = 0; j < count; j++) {
-        ctx.beginPath();
-        ctx.arc(50 + i * 100, 30 + j * 15, 5, 0, Math.PI * 2);
-        ctx.fillStyle = '#26a641'; // GitHub green
-        ctx.fill();
-      }
-    });
-
-    // Draw Pacman
-    ctx.beginPath();
-    ctx.arc(50 + (contributions.length - 1) * 100, 50, 20, 0.2, 1.8 * Math.PI);
-    ctx.lineTo(50 + (contributions.length - 1) * 100, 50);
-    ctx.fillStyle = '#ffdf00';
-    ctx.fill();
-  }
-  draw();
-</script>
-
 ###
 
 <picture>
